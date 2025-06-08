@@ -1,0 +1,27 @@
+====backend
+
+cd server
+npm init -y   //khoi tao du an nodejs
+
+npm install express mysql cors nodemon
+| Package   | Vai trò                                                                 |
+| --------- | ----------------------------------------------------------------------- |
+| `express` | Framework để tạo server nhanh chóng (routing, middleware)               |
+| `mysql`   | Dùng để kết nối và thao tác với cơ sở dữ liệu MySQL                     |
+| `cors`    | Bật Cross-Origin Resource Sharing (CORS) để frontend gọi được API       |
+| `nodemon` | Tự động restart server khi bạn thay đổi file (chỉ dùng cho development) |
+
+
+===frontend
+
+cd client
+npx create-react-app .
+npm install axios bootstrap react-router-dom react-scripts
+
+| Thư viện           | Chức năng chính                                                 |
+| ------------------ | --------------------------------------------------------------- |
+| `axios`            | Gọi API (GET, POST, PUT, DELETE...)                             |
+| `bootstrap`        | Giao diện đẹp, responsive, dễ dùng                              |
+| `react-router-dom` | Quản lý định tuyến (routing) giữa các trang trong React SPA     |
+| `react-scripts`    | Cần thiết để chạy `npm start`, `npm build` với Create React App |
+
